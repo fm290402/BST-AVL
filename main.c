@@ -6,15 +6,15 @@
 
 int main()
 {
-	int ch;
+	int input;
 	Tree T;
 	infotype data;
 
 	CreateEmpty (&T, data);
 	
 	while (1) {
-		scanf ("%c", &ch);
-		switch (ch) {		
+		scanf ("%c", &input);
+		switch (input) {		
 			case 1: // Print tree
 				PrintBagan(T);
 			case 2: //Tambah Pegawai
