@@ -11,6 +11,13 @@ int main()
 
 	CreateEmpty (&T, data);
 	
+	printf("Bagan Pegawai\n");
+	printf("1. Menampilkan bagan\n");
+	printf("2. Menambahkan pegawai\n");
+	printf("3. Menghapuskan pegawai\n");
+	printf("4. Mencari pegawai (ID)\n");
+	printf("pilihan anda: ");
+	
 	while (1) {
 		scanf ("%c", &input);
 		switch (input) {		
