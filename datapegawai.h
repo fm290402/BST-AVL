@@ -37,6 +37,7 @@ address Alokasi(infotype data);
 
 /** KONSTRUKTOR **/
 /*  Pembuatan Tree Kosong
+	Author : Caturiani PB
     I.S. : Sembarang
     F.S. : Terbentuk Tree kosong, yaitu (T)->root == NIL */
 void CreateTree(BSTree *T);
