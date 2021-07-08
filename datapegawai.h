@@ -7,6 +7,8 @@
 
 #define Nil NULL
 
+
+
 /*  Struktur Data untuk menyimpan informasi pegawai
     Berisi atribut nama bertipe String dan jabatan bertipe String */
 typedef struct {
@@ -30,9 +32,12 @@ typedef struct {
     address root;
 } BSTree;
 
-/** MANAJEMEN MEMORI **/
-/*  
-    */
+/* MANAJEMEN MEMORI
+/*  Menghasilkan address hasil alokasi sebuah Node
+    Author : M Aryadipura
+	Jika alokasi berhasil, maka address tidak Nil
+	P->info=data, P->left=Nil, P->right=Nil
+	Jika alokasi gagal, mengembalikan Nil */
 address Alokasi(infotype data);
 
 /** KONSTRUKTOR **/

@@ -1,6 +1,23 @@
 #include "datapegawai.h"
 #include <stdio.h>
 
+/* MANAJEMEN MEMORI
+/*  Menghasilkan address hasil alokasi sebuah Node
+    Author : M Aryadipura
+	Jika alokasi berhasil, maka address tidak Nil
+	P->info=data, P->left=Nil, P->right=Nil
+	Jika alokasi gagal, mengembalikan Nil */
+address Alokasi(infotype data) {
+    address P;
+	P = (address)malloc(sizeof(ElmtNode));
+	if (P != Nil) {
+		P->info = data;
+		P->left = Nil;
+		P->right = Nil;
+	}
+	return P;
+}
+
 /** KONSTRUKTOR **/
 /*  Pembuatan Tree Kosong
 	Author : Caturiani PB
