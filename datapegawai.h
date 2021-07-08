@@ -47,4 +47,10 @@ void CreateTree(BSTree *T);
 */
 bool CekBaganKosong(BSTree T);
 
+/*  Traversal InOrder
+    Author : Fadhil Muhammad
+    I.S. : T terdefinisi
+    F.S. : semua simpul T sudah diproses secara InOrder : kiri, akar, kanan */
+InOrder(BSTree T);
+
 #endif
