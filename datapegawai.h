@@ -40,7 +40,7 @@ address Alokasi(infotype data);
 	Author : Caturiani PB
     I.S. : Sembarang
     F.S. : Terbentuk Tree kosong, yaitu (T)->root == NIL */
-void CreateTree(BSTree *T);
+void BuatBagan(BSTree *T);
 
 /* Mengetahui apakah Tree kosong atau tidak
    Author : Nisa Hauna
