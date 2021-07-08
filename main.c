@@ -52,11 +52,11 @@ int main()
 			case 1: // Print tree
 				PrintBagan(T);
 			case 2: //Tambah Pegawai
-				addPegawai();
+				tambahPegawai();
 			case 3: //Delete Pegawai
-				removePegawai();
+				hapusPegawai();
 			case 4: //Cari pegawai
-				searchPegawai();
+				cariPegawai();
 			case 0: //Exit Aplikasi	
 				return 0;
 		}	
