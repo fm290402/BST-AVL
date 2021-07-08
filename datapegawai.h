@@ -10,8 +10,8 @@
 /*  Struktur Data untuk menyimpan informasi pegawai
     Berisi atribut nama bertipe String dan jabatan bertipe String */
 typedef struct {
+    int id;
     char nama[64];
-    char jabatan[32];
 } pegawai;
 
 /*  Alias Pegawai */
