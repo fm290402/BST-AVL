@@ -1,69 +1,40 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 #include "datapegawai.h"
 
-int main()
-{
-	int input;
-	Tree T;
-	infotype data;
+int main() {
+    int keyInput;
+    BSTree T;
+    infotype data;
+    
+    BuatBagan(&T);
 
-	CreateEmpty (&T, data);
-	
-	printf("Bagan Pegawai\n");
+    printf("Bagan Pegawai\n");
 	printf("1. Menampilkan bagan\n");
 	printf("2. Menambahkan pegawai\n");
 	printf("3. Menghapuskan pegawai\n");
 	printf("4. Mencari pegawai (ID)\n");
-	printf("pilihan anda: ");
-	
-	while (1) {
-		scanf ("%c", &input);
-		switch (input) {		
-			case 1: 
-				PrintBagan(T); // Menampilkan bagan
-			case 2: 
-				tambahPegawai(); //Menambahkan Pegawai
-			case 3: 
-				hapusPegawai(); //Menghapus Pegawai
-			case 4: 
-				cariPegawai(); //Mencari pegawai
-			case 0: 	
-				return 0; //Keluar aplikasi
-		}	
-	}
-}
+    printf("5. Exit\n");
 
-void tambahPegawai() {
-	infotype a;
-	
-	printf ("Nama Pegawai :\n ");
-	scanf ("%[^\n]", a.nama);
-	fflush(stdin);
-	printf ("ID Pegawai : \n");
-	scanf ("%d", &a.id);
-	fflush(stdin);
-	
-	TambahPegawai(&root,a);
-}
+    do {
+        printf("Pilih: "); 
+		scanf("%d",&keyInput);
 
-void hapusPegawai() {
-	infotype a;
-	
-	printf ("ID Pegawai : \n");
-	scanf ("%d", &a.id)
-		
-	HapusPegawai(P, id);
-}
+        if(keyInput == 1) {
+            PrintBagan(T);
+        } else if(keyInput == 2) {
+            printf("Nama : "); scanf("%s",data.nama);
+            printf("ID : "); scanf("%d",&data.id);
 
-void cariPegawai() {
-	
-	infotype a;
-	
-	printf ("ID Pegawai yang ingin dihapus : \n");
-	scanf ("%d", &a.id)
-		
-	CariPegawaiID(P, id);
+            TambahPegawai(&T,data);
+            printf("Data berhasil dimasukkan\n");
+            
+        } else if(keyInput == 3) {
+            // Hapus Pegawai
+        } else if(keyInput == 4) {
+            // Cari Pegawai
+        }else{
+        	printf("maaf pilihan tidak ada\n");
+		}
+    } while(keyInput != 5);
 }
-
