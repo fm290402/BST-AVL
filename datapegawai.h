@@ -53,4 +53,10 @@ bool CekBaganKosong(BSTree T);
     F.S. : semua simpul T sudah diproses secara InOrder : kiri, akar, kanan */
 void InOrder(BSTree T);
 
+/*  Traversal PreOrder
+    Author : Kiki Rizki Amelia
+    I.S. : T terdefinisi
+    F.S. : semua simpul T sudah diproses secara PreOrder : akar, kiri, kanan */
+void PreOrder(BSTree T);
+
 #endif
