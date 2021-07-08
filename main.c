@@ -2,7 +2,6 @@
 #include <stdlib.h>
 
 #include "datapegawai.h"
-#include "datapegawai.c"
 
 int main()
 {
