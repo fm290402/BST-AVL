@@ -21,16 +21,16 @@ int main()
 	while (1) {
 		scanf ("%c", &input);
 		switch (input) {		
-			case 1: // Print tree
-				PrintBagan(T);
-			case 2: //Tambah Pegawai
-				tambahPegawai();
-			case 3: //Delete Pegawai
-				hapusPegawai();
-			case 4: //Cari pegawai
-				cariPegawai();
-			case 0: //Exit Aplikasi	
-				return 0;
+			case 1: 
+				PrintBagan(T); // Menampilkan bagan
+			case 2: 
+				tambahPegawai(); //Menambahkan Pegawai
+			case 3: 
+				hapusPegawai(); //Menghapus Pegawai
+			case 4: 
+				cariPegawai(); //Mencari pegawai
+			case 0: 	
+				return 0; //Keluar aplikasi
 		}	
 	}
 }
