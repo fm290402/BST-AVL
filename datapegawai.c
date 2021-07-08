@@ -1,6 +1,15 @@
 #include "datapegawai.h"
 #include <stdio.h>
 
+/** KONSTRUKTOR **/
+/*  Pembuatan Tree Kosong
+	Author : Caturiani PB
+    I.S. : Sembarang
+    F.S. : Terbentuk Tree kosong, yaitu (T)->root == NIL */
+void CreateTree(BSTree *T) {
+	*T = Nil;
+}
+
 /* Mengetahui apakah Tree kosong atau tidak
    Author : Nisa Hauna
    Mengirimkan true jika Tree kosong dan False jika Tree tidak kosong
