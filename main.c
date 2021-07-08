@@ -54,7 +54,7 @@ void hapusPegawai() {
 	printf ("ID Pegawai : \n");
 	scanf ("%d", &a.id)
 		
-	HapusPegawai(&root, address node);
+	HapusPegawai(P, id);
 }
 
 void cariPegawai() {
